@@ -1,8 +1,18 @@
-import React from 'react';
+import React from 'react'
+import { HashRouter } from 'react-router-dom'
+import Layout from './Layout'
+import GlobalStyles from './style/Global'
 
-const App = () => {
+import '@shoelace-style/shoelace/dist/themes/light.css'
+import './style/tailwind.css'
+import './style/themes/light.css'
+
+const App: React.FC = () => {
   return (
-    <div>Hello</div>
+    <HashRouter basename="/">
+      <GlobalStyles />
+      <Layout />
+    </HashRouter>
   )
 }
 

@@ -1,0 +1,807 @@
+:host,
+.sl-theme-light {
+  color-scheme: light;
+
+  /*
+  * Theme Tokens
+  */
+
+  /* Primary */
+  --sl-color-primary-50: theme('colors.blue.50');
+  --sl-color-primary-100: theme('colors.blue.100');
+  --sl-color-primary-200: theme('colors.blue.200');
+  --sl-color-primary-300: theme('colors.blue.300');
+  --sl-color-primary-400: theme('colors.blue.400');
+  --sl-color-primary-500: theme('colors.blue.500');
+  --sl-color-primary-600: theme('colors.blue.600');
+  --sl-color-primary-700: theme('colors.blue.700');
+  --sl-color-primary-800: theme('colors.blue.800');
+  --sl-color-primary-900: theme('colors.blue.900');
+  --sl-color-primary-950: theme('colors.blue.950');
+
+  /* Success */
+  --sl-color-success: theme('colors.green');
+
+  /* Warning */
+  --sl-color-warning: theme('colors.orange');
+
+  /* Danger */
+  --sl-color-danger: theme('colors.red');
+
+  /* Neutral */
+  --sl-color-neutral-50: theme('colors.gray.50');
+  --sl-color-neutral-100: theme('colors.gray.100');
+  --sl-color-neutral-200: theme('colors.gray.200');
+  --sl-color-neutral-300: theme('colors.gray.300');
+  --sl-color-neutral-400: theme('colors.gray.400');
+  --sl-color-neutral-500: theme('colors.gray.500');
+  --sl-color-neutral-600: theme('colors.gray.600');
+  --sl-color-neutral-700: theme('colors.gray.700');
+  --sl-color-neutral-800: theme('colors.gray.800');
+  --sl-color-neutral-900: theme('colors.gray.900');
+  --sl-color-neutral-950: theme('colors.gray.950');
+
+  /* Neutral one-offs */
+  --sl-color-neutral-0: theme('colors.black');
+  --sl-color-neutral-1000: theme('colors.white');
+
+  /*
+  * Border radii
+  */
+
+  --sl-border-radius-small: theme("borderRadius.8");
+  --sl-border-radius-medium: theme("borderRadius.12");
+  --sl-border-radius-large: theme("borderRadius.16");
+  --sl-border-radius-circle: 50%;
+  --sl-border-radius-pill: theme("borderRadius.full");
+
+  /*
+  * Spacings
+  */
+
+  --sl-spacing-3x-small: theme("spacing.4");
+  --sl-spacing-2x-small: theme("spacing.8");
+  --sl-spacing-x-small: theme("spacing.12");
+  --sl-spacing-small: theme("spacing.16");
+  --sl-spacing-medium: theme("spacing.24");
+  --sl-spacing-large: theme("spacing.32");
+  --sl-spacing-x-large: theme("spacing.40");
+  --sl-spacing-2x-large: theme("spacing.48");
+  --sl-spacing-3x-large: theme("spacing.64");
+
+  /*
+  * Typography
+  */
+
+  /* Fonts */
+  --sl-font-mono: theme("fontFamily.sans");
+  --sl-font-sans: theme("fontFamily.sans");
+
+  /* Font sizes */
+  --sl-font-size-2x-small: theme("fontSize.11");
+  --sl-font-size-x-small: theme("fontSize.11");
+  --sl-font-size-small: theme("fontSize.12");
+  --sl-font-size-medium: theme("fontSize.14");
+  --sl-font-size-large: theme("fontSize.16");
+  --sl-font-size-x-large: theme("fontSize.20");
+  --sl-font-size-2x-large: theme("fontSize.20");
+  --sl-font-size-3x-large: theme("fontSize.32");
+  --sl-font-size-4x-large: theme("fontSize.40");
+
+  /* Font weights */
+  --sl-font-weight-normal: theme("fontWeight.normal");
+  --sl-font-weight-semibold: theme("fontWeight.medium");
+  --sl-font-weight-bold: theme("fontWeight.semibold");
+
+  /*
+  * Forms
+  */
+
+  /* Focus ring */
+  --sl-input-focus-ring-color: hsl(198.6 88.7% 48.4% / 40%);
+  --sl-focus-ring-style: solid;
+  --sl-focus-ring-width: 0;
+  --sl-focus-ring-offset: 0;
+  --sl-focus-ring: var(--sl-focus-ring-style) var(--sl-focus-ring-width) var(--sl-focus-ring-color);
+
+  /* Buttons */
+  --sl-button-font-size-small: var(--sl-font-size-small);
+  --sl-button-font-size-medium: var(--sl-font-size-medium);
+  --sl-button-font-size-large: var(--sl-font-size-large);
+
+  /* Inputs */
+  --sl-input-height-x-small: 32px;
+  --sl-input-height-small: 40px;
+  --sl-input-height-medium: 48px;
+  --sl-input-height-large: 64px;
+
+  --sl-input-background-color: var(--sl-color-neutral-1000);
+  --sl-input-background-color-hover: var(--sl-input-background-color);
+  --sl-input-background-color-focus: var(--sl-input-background-color);
+  --sl-input-background-color-disabled: var(--sl-color-neutral-600);
+  --sl-input-border-color: rgba(44, 100, 227, 0.2);
+  --sl-input-border-color-hover: var(--sl-input-border-color);
+  --sl-input-border-color-focus: var(--sl-color-primary-600);
+  --sl-input-border-color-disabled: var(--sl-color-neutral-300);
+  --sl-input-border-width: 1px;
+  --sl-input-required-content: '*';
+  --sl-input-required-content-offset: -2px;
+
+  --sl-input-border-radius-small: var(--sl-border-radius-small);
+  --sl-input-border-radius-medium: var(--sl-border-radius-medium);
+  --sl-input-border-radius-large: var(--sl-border-radius-large);
+
+  --sl-input-font-family: var(--sl-font-sans);
+  --sl-input-font-weight: var(--sl-font-weight-normal);
+  --sl-input-font-size-small: var(--sl-font-size-small);
+  --sl-input-font-size-medium: var(--sl-font-size-medium);
+  --sl-input-font-size-large: var(--sl-font-size-large);
+  --sl-input-letter-spacing: var(--sl-letter-spacing-normal);
+
+  --sl-input-color: var(--sl-color-neutral-0);
+  --sl-input-color-hover: var(--sl-input-color);
+  --sl-input-color-focus: var(--sl-input-color);
+  --sl-input-color-disabled: var(--sl-color-neutral-800);
+  --sl-input-icon-color: var(--sl-color-neutral-800);
+  --sl-input-icon-color-hover: var(--sl-color-neutral-600);
+  --sl-input-icon-color-focus: var(--sl-input-icon-color);
+  --sl-input-placeholder-color: var(--sl-color-neutral-800);
+  --sl-input-placeholder-color-disabled: var(--sl-input-placeholder-color);
+  --sl-input-spacing-small: var(--sl-spacing-small);
+  --sl-input-spacing-medium: var(--sl-spacing-medium);
+  --sl-input-spacing-large: var(--sl-spacing-large);
+
+  --sl-input-filled-background-color: var(--sl-color-neutral-100);
+  --sl-input-filled-background-color-hover: var(--sl-input-filled-background-color);
+  --sl-input-filled-background-color-focus: var(--sl-input-filled-background-color);
+  --sl-input-filled-background-color-disabled: var(--sl-color-neutral-100);
+  --sl-input-filled-color: var(--sl-color-neutral-800);
+  --sl-input-filled-color-hover: var(--sl-input-filled-color);
+  --sl-input-filled-color-focus: var(--sl-color-neutral-700);
+  --sl-input-filled-color-disabled: var(--sl-input-filled-color);
+
+  /* Labels */
+  --sl-input-label-font-size-small: var(--sl-font-size-small);
+  --sl-input-label-font-size-medium: var(--sl-font-size-medium);
+  --sl-input-label-font-size-large: var(--sl-font-size-large);
+
+  --sl-input-label-color: inherit;
+
+  /* Help text */
+  --sl-input-help-text-font-size-small: var(--sl-font-size-x-small);
+  --sl-input-help-text-font-size-medium: var(--sl-font-size-small);
+  --sl-input-help-text-font-size-large: var(--sl-font-size-medium);
+
+  --sl-input-help-text-color: theme('colors.gray.700');
+
+  /* Toggles (checkboxes, radios, switches) */
+  --sl-toggle-size: 20px;
+
+  /*
+  * Overlays
+  */
+
+  --sl-overlay-background-color: rgba(248, 248, 248, 0.6);
+
+  /*
+  * Panels
+  */
+
+  --sl-panel-background-color: var(--sl-color-neutral-1000);
+  --sl-panel-border-color: var(--sl-color-neutral-1000);
+  --sl-panel-border-width: 1px;
+
+  /*
+  * Tooltips
+  */
+
+  --sl-tooltip-border-radius: var(--sl-border-radius-medium);
+  --sl-tooltip-background-color: var(--sl-color-neutral-700);
+  --sl-tooltip-color: var(--sl-color-neutral-1000);
+  --sl-tooltip-font-family: var(--sl-font-sans);
+  --sl-tooltip-font-weight: var(--sl-font-weight-normal);
+  --sl-tooltip-font-size: var(--sl-font-size-small);
+  --sl-tooltip-line-height: var(--sl-line-height-dense);
+  --sl-tooltip-padding: var(--sl-spacing-small);
+  --sl-tooltip-arrow-size: 5px;
+}
+
+/* Input */
+
+sl-input.transparent::part(base) {
+  --sl-input-border-color: transparent;
+  --sl-input-background-color: transparent;
+  --sl-input-color: var(--sl-color-neutral-1000);
+  --sl-input-font-size-small: var(--sl-font-size-large);
+  --sl-input-font-size-medium: var(--sl-font-size-large);
+
+  --sl-input-color-hover: var(--sl-input-color);
+  --sl-input-border-color-hover: var(--sl-input-border-color);
+  --sl-input-background-color-hover: var(--sl-input-background-color);
+
+  --sl-input-color-focus: var(--sl-input-color);
+  --sl-input-border-color-focus: var(--sl-input-border-color);
+  --sl-input-background-color-focus: var(--sl-input-background-color);
+}
+
+/*  Button group */
+sl-button-group::part(base) {
+  @apply bg-gray-400 border-none rounded-4 gap-4;
+}
+
+sl-button-group sl-button::part(base) {
+  @apply flex items-center relative font-semibold h-[36px] rounded-4;
+}
+
+sl-button-group sl-button sl-icon[slot="prefix"],
+sl-button-group sl-button sl-icon[slot="suffix"] {
+  @apply square-16;
+}
+
+sl-button-group sl-button::part(base)::after {
+  @apply content-none;
+}
+
+sl-button-group sl-button[variant="default"]::part(base) {
+  @apply border-none bg-transparent hover:bg-transparent text-gray-700;
+}
+
+sl-button-group sl-button[variant="primary"]:not([disabled])::part(base) {
+  @apply bg-blue hover:bg-blue-400 text-white;
+}
+
+sl-button-group sl-button[variant="danger"]:not([disabled])::part(base) {
+  @apply hover:bg-red text-white;
+}
+
+sl-button-group sl-button[variant="primary"][disabled]::part(base),
+sl-button-group sl-button[variant="danger"][disabled]::part(base) {
+  @apply border-none bg-transparent;
+}
+
+/* Buttons */
+sl-button::part(base) {
+  @apply flex items-center font-medium tracking-wide;
+}
+
+sl-button::part(label) {
+  @apply leading-18;
+}
+
+sl-button[size='medium']::part(label) {
+  @apply leading-22;
+}
+
+sl-button[size='large']::part(label) {
+  @apply leading-24;
+}
+
+sl-icon {
+  @apply flex items-center
+}
+
+@media screen and (max-width: 425px) {
+  sl-button::part(base) {
+    --sl-button-font-size-medium: var(--sl-font-size-small);
+    --sl-button-font-size-large: var(--sl-font-size-medium);
+  }
+}
+
+sl-button:not([outline]):not([variant="default"])::part(base) {
+  @apply border-none;
+}
+
+sl-button[size='small'] sl-icon[slot='suffix'],
+sl-button[size='small'] sl-icon[slot='prefix'] {
+  @apply square-16;
+}
+
+sl-button[size='medium'] sl-icon[slot='suffix'],
+sl-button[size='medium'] sl-icon[slot='prefix'],
+sl-button[size='large'] sl-icon[slot='suffix'],
+sl-button[size='large'] sl-icon[slot='prefix'] {
+  @apply square-20;
+}
+
+sl-button.x-small sl-icon[slot='suffix'],
+sl-button.x-small sl-icon[slot='prefix'] {
+  @apply square-12;
+}
+
+/* Primary buttons */
+sl-button[variant="primary"]:not([disabled])::part(base) {
+  @apply text-white bg-blue;
+  background-color: var(--sl-color-primary-500);
+  box-shadow: 0px 8px 24px -8px rgba(44, 100, 227, 0.29);
+}
+
+sl-button[variant="primary"]:hover:not([disabled])::part(base) {
+  background: var(--sl-color-primary-400);
+}
+
+sl-button[variant="primary"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="primary"]:active:not([disabled])::part(base) {
+  background: var(--sl-color-primary-600);
+}
+
+sl-button[variant="text"][disabled]::part(base) {
+  @apply text-gray-100;
+}
+
+/* Default buttons */
+sl-button[variant="default"]:not([disabled])::part(base) {
+  @apply bg-gray-400 text-black border-none;
+  box-shadow: 0px 8px 24px -8px rgba(223, 223, 223, 0.29);
+}
+
+sl-button[variant="default"]:hover:not([disabled])::part(base) {
+  @apply bg-gray-300;
+}
+
+sl-button[variant="default"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="default"]:active:not([disabled])::part(base) {
+  @apply text-gray-950;
+}
+
+/* Neutral buttons */
+sl-button[variant="neutral"]:not([disabled])::part(base) {
+  @apply bg-blue-500/10 text-blue-500;
+  box-shadow: 0px 8px 24px -8px rgba(44, 100, 227, 0.15);
+}
+
+sl-button[variant="neutral"]:hover:not([disabled])::part(base) {
+  @apply bg-blue-500/[.15] text-blue-400;
+}
+
+sl-button[variant="neutral"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="neutral"]:active:not([disabled])::part(base) {
+  @apply bg-blue-400/20 text-blue-600;
+}
+
+/* Text buttons */
+sl-button[variant="text"]:not([disabled])::part(base) {
+  @apply text-blue-500 p-0;
+}
+
+sl-button[variant="text"]:hover:not([disabled])::part(base) {
+  @apply text-blue-400;
+}
+
+sl-button[variant="text"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="text"]:active:not([disabled])::part(base) {
+  @apply text-blue-300;
+}
+
+sl-button[variant="text"]::part(label) {
+  @apply px-0;
+}
+
+sl-button[variant="text"] sl-icon[slot='suffix'] {
+  @apply pl-8;
+}
+
+sl-button[variant="text"] sl-icon[slot='prefix'] {
+  @apply pr-8;
+}
+
+/* Success buttons */
+sl-button[variant="success"]:not([disabled])::part(base) {
+  @apply bg-green text-white;
+  box-shadow: 0px 8px 24px -8px rgba(28, 199, 96, 0.29);
+}
+
+sl-button[variant="success"]:hover:not([disabled])::part(base) {
+  @apply bg-green/90;
+}
+
+sl-button[variant="success"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="success"]:active:not([disabled])::part(base) {
+  @apply bg-green/80;
+}
+
+/* Warning buttons */
+sl-button[variant="warning"]:not([disabled])::part(base) {
+  @apply bg-orange text-white;
+  box-shadow: 0px 8px 24px -8px rgba(254, 112, 10, 0.29);
+}
+
+sl-button[variant="warning"]:hover:not([disabled])::part(base) {
+  @apply bg-orange/90;
+}
+
+sl-button[variant="warning"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="warning"]:active:not([disabled])::part(base) {
+  @apply bg-orange/80;
+}
+
+/* Danger buttons */
+sl-button[variant="danger"]:not([disabled])::part(base) {
+  @apply bg-red text-white;
+  box-shadow: 0px 8px 24px -8px rgba(215, 21, 56, 0.29);
+}
+
+sl-button[variant="danger"]:hover:not([disabled])::part(base) {
+  @apply bg-red/90;
+}
+
+sl-button[variant="danger"]:focus-visible:not([disabled])::part(base),
+sl-button[variant="danger"]:active:not([disabled])::part(base) {
+  @apply bg-red/80;
+}
+
+/* Disabled buttons */
+sl-button[disabled]:not([variant="text"])::part(base) {
+  @apply text-gray-800 bg-gray-800/20;
+}
+
+sl-button[variant="text"][disabled]::part(base) {
+  @apply text-gray-800;
+}
+
+/* x-small variant */
+
+.x-small {
+  --sl-input-height-medium: 24px;
+  --sl-spacing-small: var(--sl-spacing-x-small);
+  --sl-spacing-medium: var(--sl-spacing-x-small);
+  --sl-button-font-size-medium: var(--sl-font-size-small);
+  --sl-input-border-radius-medium: var(--sl-input-border-radius-small);
+}
+
+/* Ghost variant */
+
+sl-button[variant="default"].ghost::part(base) {
+  --sl-input-height-medium: 20px;
+  --sl-spacing-small: var(--sl-spacing-x-small);
+  --sl-spacing-medium: var(--sl-spacing-x-small);
+  --sl-button-font-size-medium: var(--sl-font-size-small);
+  --sl-input-border-radius-medium: var(--sl-input-border-radius-small);
+  @apply bg-white/10 text-white border-none;
+}
+
+sl-button[variant="default"].ghost:hover:not([disabled])::part(base) {
+  @apply bg-white/20;
+}
+
+sl-button[variant="default"].ghost:focus-visible:not([disabled])::part(base),
+sl-button[variant="default"].ghost:active:not([disabled])::part(base) {
+  @apply bg-white/[0.15];
+}
+
+/* Dark variant */
+
+sl-button[variant="default"].dark::part(base) {
+  @apply bg-gray text-white border-none;
+}
+
+sl-button[variant="default"].dark:hover:not([disabled])::part(base) {
+  @apply bg-gray-400;
+}
+
+sl-button[variant="default"].dark:focus-visible:not([disabled])::part(base),
+sl-button[variant="default"].dark:active:not([disabled])::part(base) {
+  @apply bg-gray-300;
+}
+
+/* Rounded button */
+
+sl-button.rounded-button::part(base) {
+  @apply rounded-full;
+}
+
+/* Icon button */
+sl-icon-button::part(base),
+sl-icon-button:active:not([disabled])::part(base) {
+  @apply text-gray-800;
+}
+
+sl-icon-button:hover:not([disabled])::part(base),
+sl-icon-button:focus:not([disabled])::part(base) {
+  @apply text-black;
+}
+
+/* Switch */
+
+sl-switch::part(base) {
+  @apply text-16;
+}
+
+sl-switch::part(control) {
+  --width: 38px;
+
+  @apply border-none;
+}
+
+sl-switch::part(thumb) {
+  @apply bg-white square-16 border-white;
+}
+
+sl-switch[checked]::part(control) {
+  @apply bg-blue;
+}
+
+/* Pulsar */
+
+sl-badge.dot::part(base) {
+  @apply square-8 p-0 border-none;
+}
+
+/* Radio */
+
+sl-radio::part(base) {
+  @apply items-center;
+}
+
+sl-radio::part(control) {
+  @apply border-gray-400;
+}
+
+sl-radio[aria-checked="true"]::part(control) {
+  @apply bg-white;
+}
+
+sl-radio:hover::part(control) {
+  @apply border-blue;
+}
+
+sl-radio::part(checked-icon) {
+  @apply text-blue square-24;
+}
+
+/* Checkbox */
+
+sl-checkbox::part(control) {
+  @apply border border-gray bg-gray-100 rounded-8;
+}
+
+sl-checkbox[checked]::part(control) {
+  @apply bg-blue border-blue;
+}
+
+sl-checkbox:hover::part(control) {
+  @apply border-blue;
+}
+
+sl-checkbox::part(checked-icon) {
+  @apply text-white square-12;
+}
+
+/* Range */
+
+sl-range::part(input) {
+  --track-color-active: var(--sl-color-primary-500);
+  --sl-color-primary-600: var(--sl-color-primary-500);
+}
+
+sl-range::part(tooltip) {
+  --tooltip-offset: 35px;
+}
+
+/* Tooltip */
+
+sl-tooltip::part(body) {
+  @apply max-w-[250px];
+}
+
+/* Tab group */
+
+sl-tab-group {
+  @apply w-[100%];
+}
+
+sl-tab-group::part(body) {
+  @apply p-0;
+}
+
+sl-tab-group:not(.neutral)::part(active-tab-indicator) {
+  @apply rounded-4;
+  border-bottom: 3px solid var(--sl-color-primary-500);
+}
+
+sl-tab-group.neutral sl-tab::part(base) {
+  @apply text-gray-800 fill-gray-800 py-8 px-12;
+}
+
+sl-tab-group.neutral::part(tabs) {
+  --indicator-color: transparent;
+  --track-color: transparent;
+  --track-width: 0;
+}
+
+sl-tab-group.neutral sl-tab[aria-selected="true"]::part(base) {
+  @apply text-black fill-black bg-white rounded-8;
+}
+
+sl-tab::part(base) {
+  @apply text-16 px-20 py-16 text-black tracking-[-0.6px];
+}
+
+sl-tab:hover::part(base) {
+  @apply text-blue;
+}
+
+sl-tab-panel[active] {
+  opacity: 1;
+}
+
+sl-tab-panel {
+  opacity: 0;
+}
+
+sl-tab-panel::part(base) {
+  @apply pt-24 pb-0;
+}
+
+/* Skeleton */
+
+sl-skeleton::part(base) {
+  @apply min-h-[12px];
+}
+
+sl-skeleton::part(indicator) {
+  --color: var(--sl-color-neutral-0);
+  --sheen-color: var(--sl-color-neutral-500);
+  opacity: 0.2;
+}
+
+/* Input */
+
+sl-input::part(base) {
+  --sl-input-spacing-small: var(--sl-spacing-x-small);
+  --sl-input-spacing-medium: var(--sl-spacing-small);
+  --sl-input-spacing-large: var(--sl-spacing-small);
+}
+
+sl-input.light::part(base) {
+  @apply bg-gray/40 border-transparent;
+}
+
+/* Invalid input styles */
+
+sl-input[invalid]::part(base) {
+  border-color: var(--sl-color-danger);
+}
+
+sl-input[invalid]::part(form-control-label),
+sl-input[invalid]::part(form-control-help-text) {
+  color: var(--sl-color-danger);
+}
+
+sl-input:focus-visible[invalid]::part(base) {
+  border-color: var(--sl-color-danger);
+}
+
+/* Select */
+
+sl-select::part(menu) {
+  @apply w-full bg-white border-none;
+
+  box-shadow: 0 8px 24px -8px rgba(175, 178, 237, 0.24);
+}
+
+sl-select::part(icon) {
+  @apply text-gray-800;
+}
+
+/* Menu */
+
+sl-menu {
+  @apply bg-white;
+}
+
+/* Menu item */
+
+sl-menu-item::part(base) {
+  @apply text-black hover:text-blue hover:fill-blue hover:bg-blue/10;
+}
+
+sl-menu-item[checked]::part(base) {
+  @apply text-blue;
+}
+
+/* Popup  */
+
+sl-popup sl-menu-item::part(base) {
+  @apply hover:bg-transparent;
+}
+
+/* Breadcrumb */
+
+sl-breadcrumb sl-icon {
+  @apply text-gray-200;
+}
+
+sl-breadcrumb-item::part(label) {
+  @apply font-normal text-16 text-black;
+}
+
+/* Card */
+
+sl-card::part(base) {
+  --border-radius: var(--sl-border-radius-large);
+  --border-color: var(--sl-color-neutral-1000);
+}
+
+sl-card::part(header) {
+  --border-color: var(--sl-color-neutral-300);
+  @apply p-24;
+}
+
+sl-card::part(body) {
+  --padding: 0;
+}
+
+/* Tag */
+
+sl-tag::part(base) {
+  --sl-input-height-small: var(--sl-input-height-x-small);
+  color: var(--sl-color-neutral-1000);
+  font-weight: 600;
+}
+
+sl-tag[variant="neutral"]::part(base) {
+  background-color: var(--sl-color-neutral-500);
+  border-color: var(--sl-color-neutral-500);
+}
+
+sl-tag[variant="primary"]::part(base) {
+  background-color: var(--sl-color-primary-500);
+  border-color: var(--sl-color-primary-500);
+}
+
+sl-tag[variant="primary"].light::part(base) {
+  background-color: var(--sl-color-primary-50);
+  border-color: var(--sl-color-primary-50);
+  color: var(--sl-color-primary-500);
+}
+
+sl-tag[variant="success"]::part(base) {
+  background-color: var(--sl-color-success);
+  border-color: var(--sl-color-success);
+}
+
+sl-tag[variant="warning"]::part(base) {
+  background-color: var(--sl-color-warning);
+  border-color: var(--sl-color-warning);
+}
+
+sl-tag[variant="danger"]::part(base) {
+  background-color: var(--sl-color-danger);
+  border-color: var(--sl-color-danger);
+}
+
+/* Dialog */
+
+sl-dialog::part(base) {
+  @apply max-h-screen max-w-[440px] m-auto;
+}
+
+sl-dialog::part(panel) {
+  @apply rounded-24;
+}
+
+sl-dialog::part(header) {
+  @apply px-24 pt-24;
+}
+
+sl-dialog::part(title) {
+  @apply flex items-center p-0 text-18 font-medium;
+}
+
+sl-dialog::part(header-actions) {
+  @apply p-0;
+}
+
+sl-dialog::part(body) {
+  @apply px-24 py-20;
+}
+
+/* Details */
+
+sl-details::part(base) {
+  @apply bg-gray-200;
+}
+
+sl-details::part(summary) {
+  @apply text-black font-medium;
+}
